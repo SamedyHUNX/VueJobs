@@ -1,11 +1,11 @@
 <script setup>
-import jobData from "@/jobs.json";
+import axios from "axios";
 import JobListing from "./JobListing.vue";
 import { RouterLink } from "vue-router";
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
 
 // reactive jobs
-const jobs = ref(jobData);
+const jobs = ref([]);
 
 // define props correctly
 const props = defineProps({
@@ -17,6 +17,15 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
+});
+
+onMounted(async () => {
+  try {
+    const response = await axios.get("http://localhost:5000/jobs");
+    jobs.value = response.data;
+  } catch (error) {
+    console.error("Error fetching jobs", error);
+  }
 });
 </script>
 
