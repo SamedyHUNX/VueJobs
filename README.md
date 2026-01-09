@@ -1,5 +1,8 @@
 # VueJobs
 
+![Vue.js](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+
 A modern job listing application built with Vue 3, Vite, and TailwindCSS. This application allows users to browse, add, edit, and delete job listings with a beautiful and responsive interface.
 
 ## 🚀 Features
@@ -34,7 +37,7 @@ A modern job listing application built with Vue 3, Vite, and TailwindCSS. This a
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone <https://github.com/SamedyHUNX/VueJobs>
    cd new
    ```
 
